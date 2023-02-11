@@ -1,1 +1,199 @@
 /* You can add global styles to this file, and also import other style files */
+.text-green{
+    color: #38F2AF;
+}
+*{
+    font-family: 'Oswald', sans-serif;
+}
+body:not(.dark-mode-preloading) {
+    transition: all 0.3s linear;
+}
+
+body.dark-mode {
+    background-color: #2d3436;
+    color: #dfe6e9;
+}
+
+body.light-mode {
+    background-color: #FFFFFF;
+    color: #2d3436;
+    nav{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+    a{
+        color: black !important;
+        font-weight: 700 !important;
+        // letter-spacing: 1px;
+    }
+    .text-green{
+        color: #22B9CA !important;
+        font-weight: 700 !important;
+        // letter-spacing: 1px;
+    }
+    .active{
+        color: black !important;
+        // border-bottom:1px solid #38F2AF !important;
+    }
+    .fa-navicon{
+        color: black;
+    }
+    .navbar-collapse{
+        padding-left: 90px;
+    }
+    .vector{
+       color: #22B9CA !important;
+    }
+    .border-right{
+        border-right: 1px solid rgba(0, 0, 0, 0.12);
+    }
+    mat-accordion{
+        font-weight: 700 !important;
+        letter-spacing: 1px;
+    }
+    .form-control{
+        background-color: #F2F2F2 !important;
+    }
+    .nav-link{
+        span{
+            background-color: #F2F2F2 !important;
+            
+        }
+        img{
+            font-weight: bold;
+        }
+    }
+    .height{
+        i{
+            color: black !important;
+        }
+    }
+    .p-top{
+        h3{
+            font-weight: 700;
+        }
+        button{
+            background-color: #22B9CA !important;
+            color: white !important;
+            font-weight: 400;
+        }
+        
+    }
+    .border{
+        button{
+            background-color: #22B9CA !important;
+            border: 1px solid #22B9CA !important;
+            color: white !important;
+        }
+    }
+    .bg-color1{
+        background-color: #F2F2F2;
+        color: black;
+    }
+    .height{
+        background-color: #F2F2F2;
+        color: black;
+    }
+    .grey{
+        background-color: #FCFCFC;
+    }
+    .cards{
+        background-color: #FFFFFF;;
+    }
+    mat-card{
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 5px #F2F2F2;
+    }
+    mat-card-subtitle{
+        color: #22B9CA;
+        font-weight: 500;
+        font-size: 17px !important;
+    }
+    mat-card-title{
+        color: black;
+        font-weight: 600;
+    }
+    mat-card-actions{
+        border-top: 1px solid #F2F2F2;
+       span{
+        color: black !important;
+        font-weight: 500;
+        color: black !important;
+        background-color: white !important;
+       
+       }
+      ::ng-deep button{
+        border-top: 1px solid black !important;
+      }
+        
+       }
+       @media only screen and (max-width: 280px){
+        .form-control{
+            width: 30vw !important;
+        }
+    }
+    @media only screen  and (max-width: 900px)  {
+        .navbar-collapse{
+            padding-left: 0px;
+        }}
+        @media only screen  and (max-width: 768px) {
+            .medium{
+                position: absolute;
+                right: 0px;
+                top: 50px;
+                flex-direction: column;
+                ul{
+                    flex-direction: column;
+                    li{
+                        margin-bottom: 5px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .form-control{
+                width: 40vw;
+            }
+            }
+
+
+            @media only screen and (max-width: 800px) {
+                .border-right{
+                    padding-top: 20px !important;
+                }
+            
+            }
+            @media only screen and (max-width: 280px) {
+                .p-top{
+                    .mt-4{
+                        margin-left: 1vw !important;
+                    }
+                }
+            }
+            @media only screen and (min-width:280px) and (max-width: 310px){
+                .p-top{
+                    .mt-4{
+                        margin-left: 5vw !important;
+                    }
+                }
+            }
+            @media only screen and (max-width: 353px) {
+                .p-top{
+                    button{
+                        padding:3px  6px;
+                    }
+                    .mt-4{
+                        margin-left: 10vw;
+                    }
+                }
+                .width2{
+                    position: absolute;
+                }
+                .absolute{
+                    top: 40px !important;
+                    left: 80px !important;
+                }
+                .col-lg-3{
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+                }
+            }
+}

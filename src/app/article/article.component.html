@@ -1,0 +1,225 @@
+<div class="row container-fluid">
+
+    <div class="col-lg-2 nopadding">
+        <div class="d-flex flex-column flex-shrink-0   border-right" style="width: 280px;">
+           
+            
+            <ul class="nav nav-pills flex-column mb-auto ">
+                <li class="nav-item">
+                    <mat-accordion>
+                      <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                           Status
+                          </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p>This is the primary content of the status.</p>
+                      </mat-expansion-panel>
+                     
+                    </mat-accordion>
+                    
+                  </li>
+                  <hr>
+              <li class="nav-item">
+                <mat-accordion>
+                  <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                       Price
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>This is the primary content of the price.</p>
+                  </mat-expansion-panel>
+                 
+                </mat-accordion>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <mat-accordion>
+                  <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                       Collections
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>This is the primary content of the collections.</p>
+                  </mat-expansion-panel>
+                 
+                </mat-accordion>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <mat-accordion>
+                  <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                       Chains
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>This is the primary content of the chains.</p>
+                  </mat-expansion-panel>
+                 
+                </mat-accordion>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <mat-accordion>
+                  <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                       Categories
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>This is the primary content of the categories.</p>
+                  </mat-expansion-panel>
+                 
+                </mat-accordion>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <mat-accordion>
+                  <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                       Sales
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>This is the primary content of the sales.</p>
+                  </mat-expansion-panel>
+                 
+                </mat-accordion>
+              </li>
+              <hr>
+            </ul>
+            
+           
+          </div>
+        
+    </div>
+
+<div class="col-lg-10 container-fluid grey">
+  <div class="position-absolute mode">
+    <mat-slide-toggle [checked]="darkMode$ | async" (change)="onToggle()">Change mode!</mat-slide-toggle>
+  </div>
+    <div class="p-top ">
+
+       <div class="d-flex position-relative">
+        <h3>
+            Cryptographics
+        </h3>
+        <button class="position-absolute border">
+            Create new item
+            
+         
+        </button>
+       </div>
+
+       <div class="d-flex position-relative mt-4 ">
+        <div>
+            <span class="me-3 height width">
+                Recent
+                
+                <i class="fa-solid fa-chevron-down "></i>
+            </span>
+            <span class="me-3 height width1">
+                Low to High
+               
+                <i class="fa-solid fa-chevron-down "></i>
+            </span>
+            <span class="me-3 height width2">
+                All
+              
+                <i class="fa-solid fa-chevron-down "></i>
+            </span>
+          
+           
+            
+        </div>
+
+
+        <div class="position-absolute absolute">
+            <span class="height1 bg-color ">
+               
+                <i class="fa-solid fa-grip text-green"></i>
+            </span>
+            <span class="height1 bg-color1">
+                
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+       </div>
+
+
+
+     <div class="position-relative">
+
+      <div class="cards mt-5 " >
+        <div class="row container-fluid">
+            <div class="col-lg-3" *ngFor="let element of second_arr">
+                <mat-card class="example-card">
+                    <img mat-card-image [src]="element.img" alt="Photo of a Shiba Inu">
+                   
+                    <mat-card-content>
+                        <mat-card-title>{{element.title}}</mat-card-title>
+                    <mat-card-subtitle>{{element.subtitle}}</mat-card-subtitle>
+                     
+                    </mat-card-content>
+                    
+                    <mat-card-actions>
+                      <span>{{element.type}}</span>
+                      <button mat-button class="position-absolute border1">{{element.price}}</button>
+                    </mat-card-actions>
+                  </mat-card>
+            </div>
+
+           
+      
+
+            
+           
+
+
+
+
+       </div>
+
+       
+
+    </div>
+
+    <div class="m-3 position-absolute paginator ">
+      <div class="bd-example-snippet bd-code-snippet row mx-auto  ">
+          <div class="bd-example">
+              <nav aria-label="Pagination example">
+                  <ul class="pagination pagination-sm">
+                    <li class="page-item" >
+                      <a class="page-link text-white"  aria-label="Next" (click)="nextPage(page_number,'left')">
+                       
+                        <i class="fa fa-chevron-left "></i>
+                      </a>
+                  
+                    </li>
+             
+                      <li *ngFor="let item of [].constructor(main_size); let i = index" class="page-item " aria-current="page">
+                          <a class="page-link text-white"  (click)="nextPage(i,'normal')">{{i+1}}</a>
+                          
+                      </li>
+                      <li class="page-item" >
+                        <a class="page-link text-white" aria-label="Next" (click)="nextPage(page_number,'right')">
+                          
+                          <i class="fa fa-chevron-right"></i>
+                        </a>
+                        
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </div>
+
+
+     </div>
+
+</div>
+
+</div>

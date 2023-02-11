@@ -1,0 +1,102 @@
+
+nav{
+    border-bottom: 1px solid #383940;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar{
+    --bs-navbar-padding-y: 0px !important;
+}
+.navbar-collapse{
+    padding-left: 90px;
+}
+.navbar-brand{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 50px;
+    img{
+        height: 23px;
+        padding-top: 8px;
+        padding-right: 8px;
+    }
+}
+.material-symbols-outlined{
+    padding-left: 3px !important;
+    padding-top: 3px !important;
+}
+.nav-link{
+    padding-left: 20px;
+    span{
+        display: inline-block;
+        height: 30px !important;
+        width: 30px !important;
+        background: #373943;
+        border-radius: 50%;
+        padding-left: 8px;
+        // border-radius: 10px;
+    }
+    .picture{
+        padding-left: 0px !important;
+    }
+}
+.active{
+    color: #38F2AF !important;
+    // border-bottom:1px solid #38F2AF !important;
+}
+.form-control{
+    
+    margin-left: 10px;
+    color:  #828282;
+    width: 20vw;
+    background: #373943;
+    // background-image: url("../../assets/img/Vector(5).png");
+    // background-repeat: no-repeat;
+    // position: left;
+    // padding-left: 10px;
+    // background-size: 15px;
+}
+.nav-link1{
+    padding-left: 10px !important;
+    // padding-bottom: 20px !important;
+    padding-right: 20px !important;
+}
+.position-absolute{
+    right: 30px !important;
+}
+.nav-item{
+    display: inline-block;
+}
+.nav-item::marker{
+    display: block !important;
+    width: 0px;
+    height: 0px;
+}
+@media only screen and (max-width: 280px){
+    .form-control{
+        width: 30vw !important;
+    }
+}
+@media only screen  and (max-width: 900px)  {
+    .navbar-collapse{
+        padding-left: 0px;
+    }
+}
+@media only screen  and (max-width: 768px) {
+.medium{
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    flex-direction: column;
+    ul{
+        flex-direction: column;
+        li{
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+    }
+}
+.form-control{
+    width: 40vw;
+}
+}

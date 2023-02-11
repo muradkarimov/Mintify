@@ -1,0 +1,217 @@
+.p-left{
+    padding-left: 50px;
+}
+hr{
+    margin: 2px 5px !important;
+}
+.nav-item{
+    position: relative !important;
+    img{
+        position: absolute;
+        right: 10px !important;
+        top: 20px !important;
+    }
+}
+.nav{
+    --bs-nav-link-padding-x: 0.3rem !important;
+    padding-left: 0px !important;
+}
+.container-fluid{
+    height: 100% !important;
+    padding-right: 0px !important;
+    // padding-top: 20px;
+}
+
+.border-right{
+    border-right: 1px solid #383940;
+   height: 100%;
+   padding-top: 40px !important;
+   width: 100% !important;
+}
+.p-top{
+    padding-top: 45px;
+    button{
+        background-color: #38F2AF;
+        color: #000000;
+        padding: 6px 18px;
+        border-radius: 8px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+}
+.position-absolute{
+    right: 0px;
+}
+.height{
+    display: inline-block;
+    height: 37px;
+    background-color: #373943;
+    color: #38F2AF;
+    padding: 8px;
+    gap: 12px;
+    border-radius: 6px;
+ i{
+    color: #38F2AF;
+ }
+}
+.width{
+    width: 78px;
+    i{
+        margin-left: 3px;
+    }
+}
+.width1{
+    width: 101px;
+    i{
+        margin-left: 2px;
+    }
+}
+.width2{
+    width: 56px;
+    i{
+        margin-left: 5px !important;
+    }
+}
+.height1{
+    display: inline-block;
+    width: 43px;
+    height: 37px;
+    text-align: center;
+    padding-top: 4px;
+}
+.bg-color{
+    background: rgba(56, 242, 175, 0.08);
+    border-radius: 6px 0px 0px 6px;
+}
+.bg-color1{
+    background: #373943;
+    border-radius: 0px 6px 6px 0px;
+}
+.mode{
+    right: 20px;
+    margin-top: 10px;
+}
+.cards{
+    // height: 726px;
+    background: #373943;
+    border-radius: 10px;
+    // position: relative;
+    .container-fluid{
+        height: 100% !important;
+        padding-left: 20px !important;
+        padding-bottom: 15px !important;
+    }
+    .row{
+        padding-right: 0px !important;
+    }
+}
+mat-card{
+    background-color: #272A34;
+    border-radius: 0px 0px 8px 8px;
+margin-top: 10px;
+}
+mat-card-title{
+    color: #38F2AF;
+    margin-top: 10px;
+    font-size: 18px;
+}
+mat-card-subtitle{
+    color: #828282;
+    font-size: 14px;
+    margin-top:5px;
+    margin-bottom: 60px !important;
+}
+mat-card-actions{
+    border-top: 1px solid #343741;
+    span{
+        color: #38F2AF;
+        
+    }
+    button{
+        background-color: #272A34 !important;
+        color: #38F2AF !important;
+border: 1px solid #38F2AF;
+border-radius: 20px !important;
+margin-right: 5px;
+
+    }
+}
+.me-3{
+    margin-right: 0.3rem !important;
+}
+.nopadding{
+    padding-right: 0px !important;
+}
+// .paginator{
+//     position: absolute;
+//     right: 0;
+// }
+.paginator a{
+border: 1px solid transparent;
+cursor: pointer;
+--bs-pagination-active-color:#e9ecef !important;
+}
+.paginator a:hover{
+    --bs-pagination-hover-bg: #0d6efd !important; 
+    --bs-pagination-focus-bg: transparent !important;
+}
+.pagination{
+    --bs-pagination-active-bg: #2B2C33;
+    
+    --bs-pagination-active-border-color: #2B2C33;
+    --bs-pagination-bg: transparent;
+}
+.mat-expansion-panel-header{
+    // padding-left: 5px !important;
+    // padding-right: 12px !important;
+    padding: 5px 12px 5px 5px !important;
+}
+::ng-deep .mat-expansion-panel-body{
+    padding: 5px 5px 5px !important;
+}
+.form-select{
+    background-color: #373943 !important;
+    background-image: url("../../assets/img/Vector\ \(9\).svg");
+    border:1px solid #373943;
+}
+@media only screen and (max-width: 800px) {
+    .border-right{
+        padding-top: 20px !important;
+    }
+
+}
+@media only screen and (max-width: 280px) {
+    .p-top{
+        .mt-4{
+            margin-left: 1vw !important;
+        }
+    }
+}
+@media only screen and (min-width:280px) and (max-width: 310px){
+    .p-top{
+        .mt-4{
+            margin-left: 5vw !important;
+        }
+    }
+}
+@media only screen and (max-width: 353px) {
+    .p-top{
+        button{
+            padding:3px  6px;
+        }
+        .mt-4{
+            margin-left: 10vw;
+        }
+    }
+    .width2{
+        position: absolute;
+    }
+    .absolute{
+        top: 40px !important;
+        left: 80px !important;
+    }
+    .col-lg-3{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
