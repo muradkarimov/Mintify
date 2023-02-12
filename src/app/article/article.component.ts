@@ -23,7 +23,6 @@ export class ArticleComponent {
       type: 'Fixed Price',
       price: '0.001 ETH',
       img: '../../assets/img/Top.png',
-      
     },
     {
       title: 'Mirror Glass Efect',
